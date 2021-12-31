@@ -1,0 +1,43 @@
+.section-2{
+    height: 125vh;
+    padding: 80px 130px;
+
+    main{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left{
+            @include display(flex, none, none, column, 20px);
+
+            .img-series-1{
+                @include display(flex, end, none, row, 20px);
+            }
+
+            .img-series-2{
+                @include display(flex, start, none, row, 20px);
+            }
+        }
+
+        .right{
+            width: 500px;
+            @include display(flex, none, none, column, 20px);
+
+            h2{
+                @include font(40px, 700, 22px, black);
+            }
+
+            .line{
+                height: 3px;
+                width: 45px;
+                background-color: #EFCA08;
+                border-radius: 20px;
+            }
+
+            p{
+                @include font(16px, 600, 25px, #666666);
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+footer{
+    height: 50vh;
+    background-color: #000000;
+    padding: 80px 130px;
+
+    main{
+        @include display(flex, end, space-between, row, none);
+
+        .left{
+            @include display(flex, none, none, column, 25px);
+
+            .logo{
+                width: 138px;
+            }
+
+            .about-us{
+                @include display(flex, none, none, row, 25px);
+
+                a{
+                    text-decoration: none;
+                    color: white;
+
+                    &:hover{
+                        color: gray;
+                    }
+                }
+            }
+
+            p{
+                color: white;
+            }
+        }
+
+        .right{
+            @include display(flex, none, none, column, 20px);
+
+            p{
+                color: white;
+            }
+
+            .links{
+                display: flex;
+                gap: 12px;
+
+                .btn{
+                    width: 135px;
+                    height: 38px;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: white;
+
+                    &:hover{
+                        position: relative;
+                        top: -10px;
+                    }
+                }
+            }
+        }
+    }
+}   

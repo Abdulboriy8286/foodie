@@ -1,0 +1,14 @@
+@mixin display($display, $alignitems, $justifycontent, $flexdirection, $gap) {
+    display: $display;
+    align-items: $alignitems;
+    justify-content: $justifycontent;
+    flex-direction: $flexdirection;
+    gap: $gap;
+}
+
+@mixin font($fontsize, $fontweight, $lineheight, $color) {
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    line-height: $lineheight;
+    color: $color;
+}

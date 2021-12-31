@@ -1,0 +1,56 @@
+.section-3{
+    height: 100vh;
+    background-color: #FE724C;
+    padding: 50px 130px;
+
+    main{
+        @include  display(flex, none, none, row, 160px);
+        
+        .left{
+
+            h2{
+                @include font(40px, 700, 22px, white);
+                margin-bottom: 25px;
+            }
+
+            .line{
+                height: 3px;
+                width: 45px;
+                background-color: white;
+                border-radius: 20px;
+            }
+
+            .types{
+                @include display(flex, none, none, column, 40px);
+                margin-top: 50px;
+
+                .type{
+                    @include display(flex, none, none, row, 40px);
+
+                    img{
+                        background-color: white;
+                        padding: 40px;
+                        border-radius: 50%;
+                    }
+
+                    .info{
+                        @include display(flex, none, none, column, 12px);
+
+                        b{
+                            color: white;
+                        }
+
+                        p{
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .phone{
+            width: 310px;
+            height: 550px;
+        }
+    }
+}

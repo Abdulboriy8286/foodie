@@ -1,0 +1,70 @@
+.section-5{
+    height: 95vh;
+    background-color: #F4F5F7;
+    padding: 50px 130px;
+
+    main{
+        @include display(flex, center, none,  column, 40px);
+
+        .top{
+            @include display(flex, center, none,  column, 8px);
+
+            h2{
+                @include font(40px, 700, 50px, black);
+            }
+
+            p{
+                color: #18191F;
+            }
+        }
+
+        .middle{
+            @include display(flex, none, none, row, 30px);
+
+            .box{
+                @include display(flex, center, none, column, 40px);
+
+                .info-box{
+                    width: 350px;
+                    height: 190px;
+                    background-color: white;
+                    padding: 20px 40px;
+                    border-radius: 10px;
+
+                    b{
+                        text-align: center;
+                        display: block;
+                        margin-bottom: 15px;
+                    }
+
+                    p{
+                        text-align: center;
+                    }
+                }
+            }
+
+            .user{
+                @include display(flex, center, none, column, 8px);
+            }
+        }
+
+        .bottom{
+            @include display(flex, center, none, row, 12px);
+
+            .circle-1{
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #FE724C;
+            }
+
+            .circle-2{
+                width: 15px;
+                height: 15px;
+                border: 3px solid #FE724C;
+                background-color: transparent;
+                border-radius: 50%;
+            }
+        }
+    }
+}

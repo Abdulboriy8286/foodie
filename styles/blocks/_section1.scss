@@ -1,0 +1,121 @@
+.section-1{
+    height: 100vh;
+    background-image: url(/assets/images/bg-img.png);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 10px 130px;
+    position: relative;
+
+    .bg-color{
+        width: 900px;
+        height: 850px;
+        background-color: #FE724C;
+        border-radius: 50%;
+        position: absolute;
+        top: -250px;
+        left: 555px;
+    }
+
+    header{
+        @include display(flex, center, space-between, row, none);
+        z-index: 1;
+        height: 100px;
+
+        nav{
+            @include display(flex, center, none, row, 26px);
+
+            a{
+                z-index: 1;
+                text-decoration: none;
+                @include font(16px, 600, 18px, white);
+
+                &:hover{
+                    color: #ebd6d6;
+                }
+            }
+
+            .btn{
+                z-index: 1;
+                text-decoration: none;
+                @include font(16px, 600, 18px, #FE724C);
+                background-color: white;
+                padding: 15px 45px;
+                border-radius: 100px;
+
+                &:hover{
+                    background-color: transparent;
+                    color: white;
+                    border: 1px solid white;
+                }
+            }
+        }
+    }
+
+    main{
+        height: calc(100vh - 100px);
+        display: flex;
+        align-items: center;
+        padding: 50px;
+
+        .left{
+            @include display(flex, start, none, column, 25px);
+            z-index: 1;
+
+            h1{
+                @include font(40px, 700, 50px, white);
+            }
+
+            p{
+                color: white;
+            }
+
+            .btns{
+                display: flex;
+                gap: 20px;
+
+                .btn-1{
+                    padding: 10px 30px;
+                    background-color: #FE724C;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    font-size: 17px;
+                    color: white;
+                    border: 1px solid transparent;
+                    border-radius: 100px;
+                    width: 180px;
+
+                    &:hover{
+                        background-color: transparent;
+                        color: white;
+                        border: 1px solid white;
+                    }
+                }
+    
+                .btn-2{
+                    padding: 10px 30px;
+                    background-color: transparent;
+                    display: flex;
+                    align-items: center;
+                    font-size: 17px;
+                    color: white;
+                    border: 1px solid white;
+                    border-radius: 100px;
+                    width: 180px;
+
+                    &:hover{
+                        background-color: #FE724C;
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+
+        .phone{
+            z-index: 1;
+            width: 500px;
+            height: 600px;
+        }
+    }
+}

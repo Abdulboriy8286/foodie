@@ -1,0 +1,19 @@
+@import "./mixins/mixins";
+
+@import "./blocks/section1";
+@import "./blocks/section2";
+@import "./blocks/section3";
+@import "./blocks/section4";
+@import "./blocks/section5";
+@import "./blocks/footer";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
